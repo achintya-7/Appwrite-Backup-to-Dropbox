@@ -6,7 +6,7 @@ A sample Python Cloud Function that leverages Dropbox to create backups of all t
 ## 📝 Environment Variables
 Add the following environment variables in your Cloud Function settings.
 
-* **APPWRITE_API_KEY** - Create a key from the Appwrite console with the following scope (`files.read`)
+* **APPWRITE_API_KEY** - Create a key from the Appwrite console with the following scope (`files.read`. 'files.write')
 * **APPWRITE_ENDPOINT** - Your Appwrite Endpoint
 * **DROPBOX_KEY** - OAuth token from [Dropbox](https://blogs.dropbox.com/developers/2014/05/generate-an-access-token-for-your-own-account) 
 * **COLLECTION_ID** - Your collection ID for which you want the .csv file to be created
@@ -16,7 +16,7 @@ Add the following environment variables in your Cloud Function settings.
 To package this example as a cloud function, follow these steps.
 
 ```bash
-$ cd demos-for-functions/python/feat-implement-backup-to-dropbox-Python
+$ cd PATH/WHERE/YOU/DOWNLOADED/THE/REPO/Appwrite-Backup-to-Dropbox  
 $ PIP_TARGET=./.appwrite pip install -r ./requirements.txt --upgrade --ignore-installed
 ```
 
@@ -43,4 +43,4 @@ python main.py
 
 ## 🎯 Trigger
 
-Head over to your function in the Appwrite console and under the Settings Tab, enable the `database.collections.delete` event. 
+Head over to your function in the Appwrite console and just press the excecute button.
