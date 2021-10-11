@@ -9,6 +9,7 @@ Add the following environment variables in your Cloud Function settings.
 * **APPWRITE_API_KEY** - Create a key from the Appwrite console with the following scope (`files.read`)
 * **APPWRITE_ENDPOINT** - Your Appwrite Endpoint
 * **DROPBOX_KEY** - OAuth token from [Dropbox](https://blogs.dropbox.com/developers/2014/05/generate-an-access-token-for-your-own-account) 
+* **COLLECTION_ID** - Your collection ID for which you want the .csv file to be created
 
 ## 🛠 Building and Packaging
 
