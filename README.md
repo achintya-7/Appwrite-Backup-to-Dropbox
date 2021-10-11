@@ -1,12 +1,15 @@
 # Appwrite-Backup-to-Dropbox
 
+# How to setup Appwrite
+Follow this link: https://appwrite.io/
+
 # 📁 Database Collection Backup using the Dropbox API
 A sample Python Cloud Function that leverages Dropbox to create backups of all the collection of a database made using Appwrite.
 
 ## 📝 Environment Variables
 Add the following environment variables in your Cloud Function settings.
 
-* **APPWRITE_API_KEY** - Create a key from the Appwrite console with the following scope (`files.read`. 'files.write')
+* **APPWRITE_API_KEY** - Create a key from the Appwrite console with the following scope (`files.read`. `documents.read`. `collections.read`)
 * **APPWRITE_ENDPOINT** - Your Appwrite Endpoint
 * **DROPBOX_KEY** - OAuth token from [Dropbox](https://blogs.dropbox.com/developers/2014/05/generate-an-access-token-for-your-own-account) 
 * **COLLECTION_ID** - Your collection ID for which you want the .csv file to be created
